@@ -6,7 +6,7 @@ import { sendNotification } from '@bg-hoard/api/util-notifications';
 const games: Game[] = [
   {
     id: 'settlers-in-the-can',
-    name: 'Settlers in the Can',
+    name: 'Settlers In The Can',
     image: '/assets/beans.png', // 'https://media.giphy.com/media/xUNda3pLJEsg4Nedji/giphy.gif',
     description:
       'Help your bug family claim the best real estate in a spilled can of beans.',
