@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
 import { HttpClientModule } from '@angular/common/http';
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,7 +29,10 @@ import { HttpClientModule } from '@angular/common/http';
     StoreUiSharedModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: 'baseUrl',
+    useValue: environment.apiUrl
+  }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
