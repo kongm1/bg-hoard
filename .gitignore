@@ -39,5 +39,5 @@ testem.log
 Thumbs.db
 
 # Tokens
-.local.env
+**/*.env
 .env
