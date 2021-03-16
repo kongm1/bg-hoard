@@ -9,5 +9,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1.4.5
-      - run: npm run nx affected:test store
-      - run: npm run nx affected:test api
+      - run: npm run nx affected:test --parallel -maxParallel=3 store
+      - run: npm run nx affected:test --parallel -maxParallel=3 api
