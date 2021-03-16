@@ -6,7 +6,7 @@ export default async function (host: Tree, schema: any) {
     name: `util-${schema.name}`,
     linter: 'tslint',
     directory: schema.directory,
-    tags: 'type:util, `scope:${schema.directory}`'
+    tags: `type:util, scope:${schema.directory}`
   });
   await formatFiles(host);
   return () => {
